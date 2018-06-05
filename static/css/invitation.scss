@@ -1,0 +1,1001 @@
+@import "basic.scss";
+@import "keyframes.scss";
+
+
+ 
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    background-color: #3e3e3e;
+
+    color: #d4c8bd;
+
+    overflow: hidden;
+
+    font-weight: 200;
+
+    
+}
+
+.svg_sands_svg{
+    fill:none;
+    stroke:url("#SVGID_sands_svg_");
+    stroke-width:1.0333;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10
+}
+
+.svg_presenter{
+    fill:none;
+    stroke:url("#SVGID_presenter_");
+    stroke-width:1.0333;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10
+}
+
+.svg_chef{
+    fill:none;
+    stroke:url("#SVGID_chef_");
+    stroke-width:1.0333;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10
+}
+
+.svg_menu{
+    fill:none;
+    stroke:url("#SVGID_menu_");
+    stroke-width:1.0333;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10
+}
+
+
+.frame{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+
+    animation-fill-mode :  both;
+
+    .swiper-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    &.first_title{
+        font-size: 1.4rem;
+        font-weight: lighter;
+        line-height: 1.2;
+
+        svg{
+            width: 20%;
+            display: block;
+
+            margin:0 auto;
+
+            margin-top: 0%;
+
+            margin-top: 58%;
+            margin-top: 38vh;
+
+
+        }
+    }
+}
+
+.scroll_icon
+{
+    position: fixed;
+    bottom: $scroll_icon_size *2;
+
+    width: 100%;
+    height: $scroll_icon_size;
+
+    text-align: center;
+
+    .dot
+    {
+        display: block;
+
+        width: $scroll_icon_size;
+        height: $scroll_icon_size;
+        margin: 0 auto;
+        margin-top: 0-$scroll_icon_size;
+
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    .scroll_text{
+        position: relative;
+
+        top: -30px;
+
+        font-size: 8px;
+    }
+}
+
+.scroll_icon
+{
+
+    .dot
+    {
+        animation-name: scroll_icon;
+        animation-duration: $scroll_icon_duration;
+        animation-play-state: running;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        animation-fill-mode: backwards;
+
+        /* Rectangle 2: */
+        background-image: radial-gradient(57% 43%, #D6CBC1 42%, #EBE2D7 57%, #A9968A 78%, #EBE2D7 100%);
+    }
+
+    .dot:nth-child(1)
+    {
+        animation-delay: 0 ;
+    }
+
+    .dot:nth-child(2)
+    {
+        animation-delay: $scroll_icon_duration / 4 ;
+    }
+
+    .dot:nth-child(3)
+    {
+        animation-delay: ($scroll_icon_duration / 2)  ;
+    }
+
+    .dot:nth-child(4)
+    {
+        animation-delay: ($scroll_icon_duration / 4) * 3 ;
+    }
+}
+
+
+
+.shell{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    max-width: 440px;
+    max-height: 217vw;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.bgsvg{
+    position: absolute;
+    width: 250%;
+    height: 250%;
+
+    overflow: hidden;
+
+    background-color: #000;
+
+    left: 0;
+    top: 0;
+
+    z-index: 0;
+
+    .bgsvg1{
+        transform: translate3d(-10%, 0%, 0px);
+    }
+    .bgsvg2{
+        transform: translate3d(-30%, -60%, 0px);
+    }
+
+    .cover_bg{
+        width: 40%;
+        height: 40%;
+        position: absolute;
+
+        background-image: url("../../build/static/images/cover_bg@3x-100.jpg");
+
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        filter: brightness(0%);
+
+        transition: filter $svgPathTransition_duration/2 $svgPathTransition_duration * 0.7;
+
+
+    }
+
+    .bgsvg1,.bgsvg2{
+        width: 100%;
+        height: 100%;
+
+
+        position: absolute;
+
+        transition: transform $svgPathTransition_duration,cubic-bezier(0.6, 0, 0.38, 1);
+
+
+
+        left: 0;
+        top: 0;
+
+        div{
+            width: 100%;
+
+            height: 100%;
+
+             position: absolute;
+
+             background-size: 100% auto  ;
+
+             background-repeat: no-repeat;
+        }
+
+
+        div{
+            
+            
+
+        }
+
+    }
+
+        & .bgsvg1 div:nth-child(1 ){background-image: url("../../build/static/images/svg_bg_all2-8.png")}
+
+        & .bgsvg2 div:nth-child(1 ){background-image: url("../../build/static/images/svg_bg_all1-8.png")}
+
+
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.fullpage{
+    .cover{
+
+        font-weight: 300;
+
+        .sands_svglogo{
+            width: 40%;
+            margin: 54% auto;
+        }
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+        .title{
+            width: 80%;
+            margin: 5% auto 5% auto;
+
+        }
+        
+        .content{
+            .inf{
+
+                width: 100%;
+
+
+
+            }
+        }
+
+        .srmlogo{
+            width: 40%;
+
+            margin-bottom: 1rem;
+        }
+
+        .invitation_date{
+            font-size: 1.2rem;
+
+
+            line-height: 1.3;
+
+            background-image: linear-gradient(-45deg, #CB9950 0%, #FCE9B5 24%, #FBE3AC 56%, #D5A861 61%, #C69246 81%, #FCE9B5 84%, #FCE9B5 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .invitation_button{
+            width: 25%;
+
+            margin: 0 auto;
+
+            margin-top: .8rem;
+        }
+
+        .icon_dinner{
+            width: 12%;
+
+            display: block;
+
+            margin:0 auto;
+        }
+
+        .location{
+
+            margin: .8rem auto;
+
+            font-size: 1.6rem;
+            line-height: 1.1;
+            background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .invitation_time{
+            font-size: 1.2rem;
+
+            line-height: 1.3;
+
+            background-image: url("../../build/static/images/decoration_line@3x.png");
+            background-repeat: no-repeat;
+            background-size: 41% auto;
+            background-position: 50% 75%;
+
+
+
+            .time{
+                font-size: 130%;
+            }
+        }
+
+
+
+    }
+//////////////////////////////////////////////////////////////////
+    .presenter{
+
+
+
+
+        .presenter1_name{
+            width: 20%;
+
+            margin-top: 10%;
+
+        }
+
+        .presenter1_pic{
+            position: absolute;
+
+            width: 60%;
+            left: 50%;
+            bottom: 0;
+
+            margin-left: -30%;
+        }
+    }
+
+//////////////////////////////////////////////////////////////////
+    .chef{
+        .chef1_name{
+            width: 20%;
+
+            margin: 10% 13.2%;
+        }
+        .chef2_name{
+            width: 20%;
+
+            margin: 10% 6.2%;
+        }
+
+        .chef_pic{
+            position: absolute;
+
+            width: 100%;
+            left: 50%;
+            bottom: 0;
+
+            margin-left: -50%;
+        }
+    }
+//////////////////////////////////////////////////////////////////
+    .menu{
+        .menu_list{
+            font-size: 1.2rem;
+            line-height: 1.6;
+
+            margin-top: 10%;
+            margin-top: 6vh;
+
+
+            position: relative;
+
+
+            width: 80%;
+
+            padding: (100% - 80%) / 4;
+
+            margin-left: (100% - 80%) / 4;
+
+            border-radius: 8px;
+
+
+            p{
+                background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                white-space: pre-wrap;
+
+                margin-bottom: 1em;
+            }
+
+            span{
+                display: block;
+
+
+                font-size: .9rem;
+
+
+            }
+
+            
+        }
+
+        .menu_pic{
+            position: absolute;
+
+            display: none;
+
+            
+        }
+
+        .menu_pic:nth-child(1){
+            width: 40%;
+            left: -10%;
+            top: 2%;
+
+            transform: translate3d(-75%, -40%, 0px);
+        }
+
+        .menu_pic:nth-child(2){
+            width: 50%;
+            right: -17%;
+            bottom: 27%;
+
+            transform: translate3d(68%, 20%, 0px);
+        }
+
+        .menu_pic:nth-child(3){
+            width: 60%;
+            left: -3%;
+            bottom: -1%;
+
+            transform: translate3d(-70%, 90%, 0px);
+        
+        }
+    }
+//////////////////////////////////////////////////////////////////
+    .welcome{
+        .title{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .wellcome_img{
+            width: 50%;
+
+            border-radius: 50%;
+            overflow: hidden;
+
+            margin: 0 auto;
+
+            box-shadow: 0px 0px 0px rgba(213, 200, 189, 0.4);
+
+            transition: all $frame linear ;
+
+            margin-bottom: 1rem;
+
+
+        }
+        
+        .wellcome_pmtext{
+
+            font-size: 1.2rem;
+            line-height: 1.3;
+
+
+            img{
+                width: 34%;
+                display: block;
+
+                margin: 0 auto;
+            }
+
+            .location{
+                display: block;
+
+                font-size: 1.6rem;
+                line-height: 1.1;
+                background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+.fp-viewing-cover_simple{
+
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-cover{
+
+     .bgsvg1{
+        transform: translate3d(-50%, -60%, 0px);
+        opacity: 1;
+    }
+    .bgsvg2{
+        transform: translate3d(-50%, -30%, 0px);
+        opacity: 1;
+    }
+
+    .cover_bg{
+        filter: brightness(110%);
+    }
+
+    .cover{
+
+        .svgpath{
+
+            animation-name: sands_svglogo;
+            animation-duration: $frame * 0.4;
+            animation-timing-function: cubic-bezier(0.44,-0.01, 0.27, 0.99);
+            animation-delay: 700ms;
+            animation-iteration-count: 1;
+            animation-fill-mode :both;
+
+        }
+
+        .frame {
+            animation-name: frame;
+            animation-duration: $frame;
+            animation-timing-function: linear;
+            
+            animation-iteration-count: 1;
+            animation-play-state: running;
+        }
+
+        .frame.end{
+            animation-name: frame_end;
+        }
+        
+        .frame:nth-child(1){ animation-delay: .1s; }
+        .frame:nth-child(2){ animation-delay: $frame*1 - $frame * 0.16 ; }
+        .frame:nth-child(3){ animation-delay: $frame*2 - ($frame * 0.16) * 2 ; }
+        .frame:nth-child(4){ animation-delay: $frame*3 - ($frame * 0.16) * 3 ; }
+
+        .content{
+                
+
+
+
+
+
+        }
+
+    }
+
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-about{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-artist{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-presenter{
+
+
+
+    .cover_bg{
+        transition-delay: 300ms, 300ms;
+        filter: brightness(0%);
+
+    }
+    
+
+    .bgsvg1{
+        transform: translate3d(-30%, -60%, 0px);
+        opacity: 1;
+    }
+    .bgsvg2{
+        transform: translate3d(-10%, -10%, 0px);
+        opacity: 1;
+    }
+
+
+    .presenter{
+
+        .svgpath{
+
+            animation-name: presenter_svg;
+            animation-duration: $frame * 0.4;
+            animation-timing-function: cubic-bezier(0.44,-0.01, 0.27, 0.99);
+            animation-delay: 700ms;
+            animation-iteration-count: 1;
+            animation-fill-mode :both;
+
+        }
+
+
+        .frame {
+            animation-name: frame;
+            animation-duration: $frame;
+            animation-timing-function: linear;
+            
+            animation-iteration-count: 1;
+            animation-play-state: running;
+        }
+
+        .frame.end{
+            animation-name: frame_end;
+        }
+        
+        .frame:nth-child(1){ animation-delay: .1s; }
+        .frame:nth-child(2){ animation-delay: $frame - $frame * 0.16 ; }
+        .frame:nth-child(3){ animation-delay: $frame*2 - ($frame * 0.16) * 2 ; }
+
+    }
+
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-chef{
+
+
+
+    .bgsvg1{
+        transform: translate3d(-40%, -40%, 0px);
+        opacity: 1;
+    }
+    .bgsvg2{
+        transform: translate3d(-50%, -30%, 0px);
+        opacity: 1;
+    }
+
+
+    .chef{
+
+        .svgpath{
+            animation-name: chef_svg;
+            animation-duration: $frame * 0.4;
+            animation-timing-function: cubic-bezier(0.44,-0.01, 0.27, 0.99);
+            animation-delay: 700ms;
+            animation-iteration-count: 1;
+            animation-fill-mode :both;
+
+        }
+
+
+        .frame {
+            animation-name: frame;
+            animation-duration: $frame;
+            animation-timing-function: linear;
+            
+            animation-iteration-count: 1;
+            animation-play-state: running;
+        }
+
+        .frame.end{
+            animation-name: frame_end;
+        }
+        
+        .frame:nth-child(1){ animation-delay: .1s; }
+        .frame:nth-child(2){ animation-delay: $frame - $frame * 0.16 ;}
+        .frame:nth-child(3){ animation-delay: $frame*2 - ($frame * 0.16) * 2 ; }
+    }
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-restaurant{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-menu{
+    
+    .bgsvg1{
+        transform: translate3d(-40%, -60%, 0px);
+        opacity: 1;
+    }
+    .bgsvg2{
+        transform: translate3d(-20%, -10%, 0px);
+        opacity: 1;
+    }
+
+
+    .menu{
+
+        .svgpath{
+            animation-name: menu_svg;
+            animation-duration: $frame * 0.4;
+            animation-timing-function: cubic-bezier(0.44,-0.01, 0.27, 0.99);
+            animation-delay: 700ms;
+            animation-iteration-count: 1;
+            animation-fill-mode :both;
+
+        }
+
+
+        .frame {
+            animation-name: frame;
+            animation-duration: $frame;
+            animation-timing-function: linear;
+            
+            animation-iteration-count: 1;
+            animation-play-state: running;
+        }
+
+        .frame.end{
+            animation-name: frame_end;
+        }
+        
+        .frame:nth-child(1){ animation-delay: .1s; }
+        .frame:nth-child(2){ animation-delay: $frame - $frame * 0.16 ;}
+        .frame:nth-child(3){ animation-delay: $frame*2 - ($frame * 0.16) * 2 ;}
+
+        .frame.end .menu_pic{
+            
+
+            transition-property: transform;
+            transition-duration: $frame *0.7;
+            transition-timing-function: cubic-bezier(0, 0, 0.22, 0.99);
+            transition-delay: $frame*0.7 ;
+
+            transform: translate3d(0%, 0%, 0px);
+        }
+    }
+
+
+
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-dishes{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-welcome{
+
+    .scroll_icon{
+        display: none;
+    }
+
+
+    .bgsvg1{
+        transform: translate3d(-20%, -20%, 0px);
+        opacity: 1;
+    }
+    .bgsvg2{
+        transform: translate3d(-15%, -5%, 0px);
+        opacity: 1;
+    }
+
+    
+    .welcome{
+        .wellcome_img{
+            box-shadow: 0px 0px 70px rgba(213, 200, 189, 0.4);
+        }
+    }
+    
+
+
+
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-examine{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+.fp-viewing-rsvp{
+    
+}
+
+//////////////////////////////////////////////////////////////////
+
+
+.fullpage .chef .swiper-container{
+    .swiper-button-prev{
+        background-image: none;
+
+        border-top: 2px solid #d4c8bd;
+        border-left: 2px solid #d4c8bd;
+
+        border-radius: 4px 0px 0px 0px;
+
+        transform: rotate(-45deg);
+
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .swiper-button-next{
+        background-image: none;
+
+        border-top: 2px solid #d4c8bd;
+        border-right: 2px solid #d4c8bd;
+
+        border-radius: 0px 4px 0px 0px;
+
+        transform: rotate(45deg);
+
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

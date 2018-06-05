@@ -1,1 +1,9 @@
-# black_pearl_invitation
+## 大众点评黑珍珠餐厅指南, 澳门发布会晚宴邀请函
+
+
+3个版本
+
+* index--[客户版] 15号
+* index2--[客户版] 16号
+* index_fans--[大众粉丝版]
+
