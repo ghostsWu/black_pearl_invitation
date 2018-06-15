@@ -1,6 +1,15 @@
 html {
   font-size: 62.5%; }
 
+body {
+  background-color: #000; }
+
+.bgsvg {
+  background-color: transparent; }
+
+.scroll_icon {
+  bottom: 12px; }
+
 .fullpage .cover .fans_title {
   width: 90%;
   margin-top: 51%;
@@ -49,24 +58,24 @@ html {
     -webkit-text-fill-color: transparent;
     white-space: pre-wrap; }
     .fullpage .artist .artist_pic .artist_name span {
-      font-size: 1rem;
+      font-size: .9rem;
       margin-top: 0.7rem; }
   .fullpage .artist .artist_pic img {
     position: absolute;
     top: 0;
     width: 30%;
-    -webkit-filter: drop-shadow(0px 0px 7px #000);
-            filter: drop-shadow(0px 0px 7px #000); }
+    opacity: 0;
+    /*filter: drop-shadow(0px 0px 7px #000);*/ }
   .fullpage .artist .artist_pic img.zouxiaoyan {
     left: -5%; }
   .fullpage .artist .artist_pic img.dongkepin {
     left: 10%; }
   .fullpage .artist .artist_pic img.zhangliang {
-    left: 23%; }
+    left: 26%; }
   .fullpage .artist .artist_pic img.sheshiman {
-    left: 39%; }
+    left: 43%; }
   .fullpage .artist .artist_pic img.dazuo {
-    right: 15%; }
+    right: 13%; }
   .fullpage .artist .artist_pic img.languijun {
     right: -5%; }
   .fullpage .artist .artist_pic .artist_name.zouxiaoyan {
@@ -111,8 +120,8 @@ html {
 .fullpage .restaurant .first_title span {
   font-size: 80%; }
 .fp-viewing-la_chine .fullpage .restaurant .svgpath {
-  -webkit-animation-name: menu_svg;
-          animation-name: menu_svg;
+  -webkit-animation-name: restaurant_svg;
+          animation-name: restaurant_svg;
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
   -webkit-animation-timing-function: cubic-bezier(0.44, -0.01, 0.27, 0.99);
@@ -174,6 +183,16 @@ html {
     left: 0;
     top: 0;
     z-index: 1; }
+  .fullpage .restaurant .scene .display_table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%; }
+  .fullpage .restaurant .scene .table_cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%; }
 .fullpage .restaurant.fp-completely .bg {
   -webkit-animation-name: restaurant_bg;
           animation-name: restaurant_bg;
@@ -185,15 +204,17 @@ html {
           animation-play-state: running;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms; }
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms; }
 .fullpage .restaurant.la_chine .scene .bg {
   background-image: url("../../build/static/images/fans/la_chine_l.jpg");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation-delay: 4500ms;
-          animation-delay: 4500ms; }
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms; }
 .fullpage .restaurant.golden_peacock .scene .bg {
   background-image: url("../../build/static/images/fans/golden_peacock_l.jpg");
   background-size: 100% auto;
@@ -248,10 +269,11 @@ html {
   right: 2rem;
   top: 2rem;
   bottom: 2rem;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px #000;
           box-shadow: 0px 0px 10px #000;
+  border: 1px solid rgba(212, 166, 94, 0.4);
   padding: 1rem;
   overflow: hidden; }
   .fullpage .restaurant .menu p {
@@ -266,6 +288,8 @@ html {
   .fullpage .restaurant .menu small {
     font-size: 70%;
     font-weight: bold; }
+  .fullpage .restaurant .menu h3 {
+    margin-top: 0; }
 .fullpage .welcome .link {
   width: 40%;
   margin: 0 auto; }
@@ -274,40 +298,128 @@ html {
 .fullpage .welcome .wellcome_img {
   margin: 11% auto; }
 
-.bgsvg .divrestaurant {
-  width: 0%;
-  height: 0%;
-  width: 100vw;
-  height: 100vh;
+.picbg {
   position: absolute;
-  -webkit-transition: opacity 500ms  linear;
-  transition: opacity 500ms  linear;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   left: 0;
   top: 0;
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0; }
-.bgsvg .la_chine {
-  background-image: url("../../build/static/images/fans/la_chine_d.jpg");
-  -webkit-transition-delay: 3000ms;
-          transition-delay: 3000ms; }
-  .fp-viewing-la_chine .bgsvg .la_chine {
-    opacity: 1; }
-  .fp-viewing-la_chine_menu .bgsvg .la_chine {
-    opacity: 1; }
-.bgsvg .golden_peacock {
-  background-image: url("../../build/static/images/fans/golden_peacock_d.jpg"); }
-  .fp-viewing-golden_peacock .bgsvg .golden_peacock {
-    opacity: 1; }
-  .fp-viewing-golden_peacock_menu .bgsvg .golden_peacock {
-    opacity: 1; }
-.bgsvg .zi_yat_heendiv {
-  background-image: url("../../build/static/images/fans/zi_yat_heen_d.jpg"); }
-  .fp-viewing-zi_yat_heen .bgsvg .zi_yat_heendiv {
-    opacity: 1; }
-  .fp-viewing-zi_yat_heen_menu .bgsvg .zi_yat_heendiv {
-    opacity: 1; }
+  z-index: 0; }
+  .picbg .restaurant {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: opacity 500ms linear 600ms;
+    transition: opacity 500ms linear 600ms;
+    left: 0;
+    top: 0;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; }
+  .picbg .la_chine {
+    background-image: url("../../build/static/images/fans/la_chine_d.jpg");
+    -webkit-transition-delay: 3000ms;
+            transition-delay: 3000ms; }
+    .fp-viewing-la_chine .picbg .la_chine {
+      opacity: 1; }
+    .fp-viewing-la_chine_menu .picbg .la_chine {
+      opacity: 1; }
+  .picbg .golden_peacock {
+    background-image: url("../../build/static/images/fans/golden_peacock_d.jpg"); }
+    .fp-viewing-golden_peacock .picbg .golden_peacock {
+      opacity: 1; }
+    .fp-viewing-golden_peacock_menu .picbg .golden_peacock {
+      opacity: 1; }
+  .picbg .zi_yat_heendiv {
+    background-image: url("../../build/static/images/fans/zi_yat_heen_d.jpg"); }
+    .fp-viewing-zi_yat_heen .picbg .zi_yat_heendiv {
+      opacity: 1; }
+    .fp-viewing-zi_yat_heen_menu .picbg .zi_yat_heendiv {
+      opacity: 1; }
+  .picbg .dish {
+    /*display: none;*/
+    position: absolute;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    -webkit-transition: -webkit-transform 1000ms cubic-bezier(0, 0, 0.33, 0.96) 300ms;
+    transition: -webkit-transform 1000ms cubic-bezier(0, 0, 0.33, 0.96) 300ms;
+    transition: transform 1000ms cubic-bezier(0, 0, 0.33, 0.96) 300ms;
+    transition: transform 1000ms cubic-bezier(0, 0, 0.33, 0.96) 300ms, -webkit-transform 1000ms cubic-bezier(0, 0, 0.33, 0.96) 300ms;
+    z-index: 3; }
+    .picbg .dish.la_chine3 {
+      display: block;
+      width: 50%;
+      bottom: -33%;
+      left: 26%; }
+      .fp-viewing-la_chine_menu .picbg .dish.la_chine3 {
+        -webkit-transform: translate(0%, -69%);
+                transform: translate(0%, -69%); }
+    .picbg .dish.la_chine2 {
+      display: block;
+      width: 38%;
+      top: -21%;
+      left: 96%; }
+      .fp-viewing-la_chine_menu .picbg .dish.la_chine2 {
+        -webkit-transform: translate(-70%, 64%);
+                transform: translate(-70%, 64%); }
+    .picbg .dish.la_chine1 {
+      display: block;
+      width: 58%;
+      top: -33%;
+      left: -55%; }
+      .fp-viewing-la_chine_menu .picbg .dish.la_chine1 {
+        -webkit-transform: translate(70%, 50%);
+                transform: translate(70%, 50%); }
+    .picbg .dish.golden_peacock3 {
+      display: block;
+      width: 50%;
+      top: -30%;
+      left: -34%; }
+      .fp-viewing-golden_peacock_menu .picbg .dish.golden_peacock3 {
+        -webkit-transform: translate(43%, 52%);
+                transform: translate(43%, 52%); }
+    .picbg .dish.golden_peacock2 {
+      display: block;
+      width: 50%;
+      top: 1%;
+      left: 100%; }
+      .fp-viewing-golden_peacock_menu .picbg .dish.golden_peacock2 {
+        -webkit-transform: translate(-80%, -28%);
+                transform: translate(-80%, -28%); }
+    .picbg .dish.golden_peacock1 {
+      display: block;
+      width: 82%;
+      bottom: -17%;
+      left: -95%; }
+      .fp-viewing-golden_peacock_menu .picbg .dish.golden_peacock1 {
+        -webkit-transform: translate(90%, -27%);
+                transform: translate(90%, -27%); }
+    .picbg .dish.zi_yat_heen3 {
+      display: block;
+      width: 60%;
+      top: -8%;
+      left: -60%; }
+      .fp-viewing-zi_yat_heen_menu .picbg .dish.zi_yat_heen3 {
+        -webkit-transform: translate(95%, -8%);
+                transform: translate(95%, -8%); }
+    .picbg .dish.zi_yat_heen2 {
+      display: block;
+      width: 60%;
+      top: -6%;
+      right: -58%; }
+      .fp-viewing-zi_yat_heen_menu .picbg .dish.zi_yat_heen2 {
+        -webkit-transform: translate(-80%, 0%);
+                transform: translate(-80%, 0%); }
+    .picbg .dish.zi_yat_heen1 {
+      display: block;
+      width: 72%;
+      bottom: -44%;
+      left: -46%; }
+      .fp-viewing-zi_yat_heen_menu .picbg .dish.zi_yat_heen1 {
+        -webkit-transform: translate(40%, -53%);
+                transform: translate(40%, -53%); }
 
 .svg_restaurant {
   fill: none;
@@ -317,6 +429,236 @@ html {
   stroke-linejoin: round;
   stroke-miterlimit: 10; }
 
+.artist_animation {
+  opacity: 0;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.33, 0.96);
+          animation-timing-function: cubic-bezier(0, 0, 0.33, 0.96);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+  .active .artist_animation {
+    -webkit-animation-name: artist_animation;
+            animation-name: artist_animation; }
+  .artist_animation:nth-of-type(1) {
+    -webkit-animation-delay: 937.5ms;
+            animation-delay: 937.5ms; }
+  .artist_animation:nth-of-type(2) {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms; }
+  .artist_animation:nth-of-type(3) {
+    -webkit-animation-delay: 562.5ms;
+            animation-delay: 562.5ms; }
+  .artist_animation:nth-of-type(4) {
+    -webkit-animation-delay: 375ms;
+            animation-delay: 375ms; }
+  .artist_animation:nth-of-type(5) {
+    -webkit-animation-delay: 187.5ms;
+            animation-delay: 187.5ms; }
+  .artist_animation:nth-of-type(6) {
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms; }
+
+.ladder_animation {
+  opacity: 0;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.33, 0.96);
+          animation-timing-function: cubic-bezier(0, 0, 0.33, 0.96);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+  .fp-completely .ladder_animation {
+    -webkit-animation-name: ladder_animation;
+            animation-name: ladder_animation; }
+  .ladder_animation:nth-of-type(1) {
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms; }
+  .ladder_animation:nth-of-type(2) {
+    -webkit-animation-delay: 100ms;
+            animation-delay: 100ms; }
+  .ladder_animation:nth-of-type(3) {
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms; }
+  .ladder_animation:nth-of-type(4) {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms; }
+  .ladder_animation:nth-of-type(5) {
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms; }
+  .ladder_animation:nth-of-type(6) {
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms; }
+  .ladder_animation:nth-of-type(7) {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms; }
+  .ladder_animation:nth-of-type(8) {
+    -webkit-animation-delay: 700ms;
+            animation-delay: 700ms; }
+  .ladder_animation:nth-of-type(9) {
+    -webkit-animation-delay: 800ms;
+            animation-delay: 800ms; }
+  .ladder_animation:nth-of-type(10) {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms; }
+  .ladder_animation:nth-of-type(11) {
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms; }
+  .ladder_animation:nth-of-type(12) {
+    -webkit-animation-delay: 1100ms;
+            animation-delay: 1100ms; }
+  .ladder_animation:nth-of-type(13) {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms; }
+  .ladder_animation:nth-of-type(14) {
+    -webkit-animation-delay: 1300ms;
+            animation-delay: 1300ms; }
+  .ladder_animation:nth-of-type(15) {
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms; }
+  .ladder_animation:nth-of-type(16) {
+    -webkit-animation-delay: 1500ms;
+            animation-delay: 1500ms; }
+  .ladder_animation:nth-of-type(17) {
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms; }
+  .ladder_animation.delay:nth-of-type(1) {
+    -webkit-animation-delay: 3000ms;
+            animation-delay: 3000ms; }
+  .ladder_animation.delay:nth-of-type(2) {
+    -webkit-animation-delay: 3100ms;
+            animation-delay: 3100ms; }
+  .ladder_animation.delay:nth-of-type(3) {
+    -webkit-animation-delay: 3200ms;
+            animation-delay: 3200ms; }
+  .ladder_animation.delay:nth-of-type(4) {
+    -webkit-animation-delay: 3300ms;
+            animation-delay: 3300ms; }
+  .ladder_animation.delay:nth-of-type(5) {
+    -webkit-animation-delay: 3400ms;
+            animation-delay: 3400ms; }
+  .ladder_animation.delay:nth-of-type(6) {
+    -webkit-animation-delay: 3500ms;
+            animation-delay: 3500ms; }
+  .ladder_animation.delay:nth-of-type(7) {
+    -webkit-animation-delay: 3600ms;
+            animation-delay: 3600ms; }
+  .ladder_animation.delay:nth-of-type(8) {
+    -webkit-animation-delay: 3700ms;
+            animation-delay: 3700ms; }
+  .ladder_animation.delay:nth-of-type(9) {
+    -webkit-animation-delay: 3800ms;
+            animation-delay: 3800ms; }
+  .ladder_animation.delay:nth-of-type(10) {
+    -webkit-animation-delay: 3900ms;
+            animation-delay: 3900ms; }
+  .ladder_animation.delay:nth-of-type(11) {
+    -webkit-animation-delay: 4000ms;
+            animation-delay: 4000ms; }
+  .ladder_animation.delay:nth-of-type(12) {
+    -webkit-animation-delay: 4100ms;
+            animation-delay: 4100ms; }
+  .ladder_animation.delay:nth-of-type(13) {
+    -webkit-animation-delay: 4200ms;
+            animation-delay: 4200ms; }
+  .ladder_animation.delay:nth-of-type(14) {
+    -webkit-animation-delay: 4300ms;
+            animation-delay: 4300ms; }
+  .ladder_animation.delay:nth-of-type(15) {
+    -webkit-animation-delay: 4400ms;
+            animation-delay: 4400ms; }
+  .ladder_animation.delay:nth-of-type(16) {
+    -webkit-animation-delay: 4500ms;
+            animation-delay: 4500ms; }
+  .ladder_animation.delay:nth-of-type(17) {
+    -webkit-animation-delay: 4600ms;
+            animation-delay: 4600ms; }
+
+.fp-viewing-artist .bgsvg .bgsvg1 {
+  -webkit-transform: translate3d(-40%, -60%, 0px);
+          transform: translate3d(-40%, -60%, 0px);
+  opacity: 1; }
+.fp-viewing-chef_B .bgsvg .bgsvg1 {
+  -webkit-transform: translate3d(-40%, -40%, 0px);
+          transform: translate3d(-40%, -40%, 0px);
+  opacity: 1; }
+.fp-viewing-la_chine .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-la_chine_menu .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-golden_peacock .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-golden_peacock_menu .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-zi_yat_heen .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-zi_yat_heen_menu .bgsvg .bgsvg1 {
+  opacity: 0; }
+.fp-viewing-artist .bgsvg .bgsvg2 {
+  -webkit-transform: translate3d(-20%, -10%, 0px);
+          transform: translate3d(-20%, -10%, 0px);
+  opacity: 1; }
+.fp-viewing-chef_B .bgsvg .bgsvg2 {
+  -webkit-transform: translate3d(-50%, -30%, 0px);
+          transform: translate3d(-50%, -30%, 0px);
+  opacity: 1; }
+.fp-viewing-la_chine .bgsvg .bgsvg2 {
+  opacity: 0; }
+.fp-viewing-la_chine_menu .bgsvg .bgsvg2 {
+  opacity: 0; }
+.fp-viewing-golden_peacock .bgsvg .bgsvg2 {
+  opacity: 0; }
+.fp-viewing-golden_peacock_menu .bgsvg .bgsvg2 {
+  opacity: 0; }
+.fp-viewing-zi_yat_heen .bgsvg .bgsvg2 {
+  opacity: 0; }
+.fp-viewing-zi_yat_heen_menu .bgsvg .bgsvg2 {
+  opacity: 0; }
+
+@-webkit-keyframes artist_animation {
+  from {
+    -webkit-transform: scale(1.3) translatey(20%);
+            transform: scale(1.3) translatey(20%);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1) translatey(0%);
+            transform: scale(1) translatey(0%);
+    opacity: 1; } }
+
+@keyframes artist_animation {
+  from {
+    -webkit-transform: scale(1.3) translatey(20%);
+            transform: scale(1.3) translatey(20%);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1) translatey(0%);
+            transform: scale(1) translatey(0%);
+    opacity: 1; } }
+@-webkit-keyframes ladder_animation {
+  from {
+    -webkit-transform: translatey(10%);
+            transform: translatey(10%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+    opacity: 1; } }
+@keyframes ladder_animation {
+  from {
+    -webkit-transform: translatey(10%);
+            transform: translatey(10%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+    opacity: 1; } }
 @-webkit-keyframes sands_svglogo_fans {
   from {
     stroke-dasharray: 310;
@@ -324,7 +666,6 @@ html {
   to {
     stroke-dasharray: 310;
     stroke-dashoffset: 620; } }
-
 @keyframes sands_svglogo_fans {
   from {
     stroke-dasharray: 310;
@@ -332,6 +673,20 @@ html {
   to {
     stroke-dasharray: 310;
     stroke-dashoffset: 620; } }
+@-webkit-keyframes restaurant_svg {
+  from {
+    stroke-dasharray: 72;
+    stroke-dashoffset: 72; }
+  to {
+    stroke-dasharray: 72;
+    stroke-dashoffset: 144; } }
+@keyframes restaurant_svg {
+  from {
+    stroke-dasharray: 72;
+    stroke-dashoffset: 72; }
+  to {
+    stroke-dasharray: 72;
+    stroke-dashoffset: 144; } }
 @-webkit-keyframes restaurant_bg {
   from {
     opacity: 1; }
