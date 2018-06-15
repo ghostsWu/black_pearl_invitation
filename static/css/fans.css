@@ -1,0 +1,344 @@
+html {
+  font-size: 62.5%; }
+
+.fullpage .cover .fans_title {
+  width: 90%;
+  margin-top: 51%;
+  margin-top: 32vh; }
+.fullpage .cover .srm_logo {
+  width: 40%;
+  margin-top: 13%;
+  margin-top: 8vh; }
+.fullpage .cover .sands_svglogo {
+  margin: 83% auto;
+  margin: 51.6vh auto; }
+  .fp-viewing-cover .fullpage .cover .sands_svglogo .svgpath {
+    -webkit-animation-name: sands_svglogo_fans;
+            animation-name: sands_svglogo_fans; }
+.fullpage .artist .title {
+  font-size: 1rem;
+  margin-top: 0%;
+  margin-top: 1vh;
+  margin-bottom: 6vh; }
+  .fullpage .artist .title p {
+    background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap; }
+    .fullpage .artist .title p:first-child {
+      font-size: 1.4rem;
+      line-height: 1; }
+.fullpage .artist .artist_pic {
+  position: relative;
+  height: 270px;
+  height: 45vh; }
+  .fullpage .artist .artist_pic .artist_name {
+    position: absolute;
+    top: 0%;
+    -webkit-writing-mode: tb;
+        -ms-writing-mode: tb;
+            writing-mode: tb;
+    text-align: left;
+    font-size: .7rem;
+    line-height: 1.3;
+    margin-left: -4%;
+    background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap; }
+    .fullpage .artist .artist_pic .artist_name span {
+      font-size: 1rem;
+      margin-top: 0.7rem; }
+  .fullpage .artist .artist_pic img {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    -webkit-filter: drop-shadow(0px 0px 7px #000);
+            filter: drop-shadow(0px 0px 7px #000); }
+  .fullpage .artist .artist_pic img.zouxiaoyan {
+    left: -5%; }
+  .fullpage .artist .artist_pic img.dongkepin {
+    left: 10%; }
+  .fullpage .artist .artist_pic img.zhangliang {
+    left: 23%; }
+  .fullpage .artist .artist_pic img.sheshiman {
+    left: 39%; }
+  .fullpage .artist .artist_pic img.dazuo {
+    right: 15%; }
+  .fullpage .artist .artist_pic img.languijun {
+    right: -5%; }
+  .fullpage .artist .artist_pic .artist_name.zouxiaoyan {
+    left: 8.333%;
+    top: 69%; }
+  .fullpage .artist .artist_pic .artist_name.dongkepin {
+    left: 24.99999333333333%;
+    top: 73%; }
+  .fullpage .artist .artist_pic .artist_name.zhangliang {
+    left: 41.66665333333333%;
+    top: 77%; }
+  .fullpage .artist .artist_pic .artist_name.sheshiman {
+    left: 58.33331333333333%;
+    top: 77%; }
+  .fullpage .artist .artist_pic .artist_name.dazuo {
+    left: 74.99997333333333%;
+    top: 73%; }
+  .fullpage .artist .artist_pic .artist_name.languijun {
+    left: 91.66663333333333%;
+    top: 69%; }
+.fp-viewing-chef_B .fullpage .chef_A .frame.end {
+  display: block;
+  opacity: 1;
+  -webkit-animation-name: frame_end;
+          animation-name: frame_end;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
+.fp-viewing-chef_B .fullpage .chef_A .frame {
+  -webkit-animation-name: frame;
+          animation-name: frame;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
+.fullpage .chef_B .frame {
+  display: block;
+  opacity: 1; }
+.fullpage .restaurant .first_title span {
+  font-size: 80%; }
+.fp-viewing-la_chine .fullpage .restaurant .svgpath {
+  -webkit-animation-name: menu_svg;
+          animation-name: menu_svg;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-animation-timing-function: cubic-bezier(0.44, -0.01, 0.27, 0.99);
+          animation-timing-function: cubic-bezier(0.44, -0.01, 0.27, 0.99);
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+.fp-viewing-la_chine .fullpage .restaurant .frame {
+  -webkit-animation-name: frame;
+          animation-name: frame;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+.fp-viewing-la_chine .fullpage .restaurant .frame.end, .fp-viewing-la_chine_menu .fullpage .restaurant.la_chine_menu .frame.end {
+  -webkit-animation-name: frame_end;
+          animation-name: frame_end; }
+.fp-viewing-la_chine .fullpage .restaurant .frame:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+.fp-viewing-la_chine .fullpage .restaurant .frame:nth-child(2) {
+  -webkit-animation-delay: 2520ms;
+          animation-delay: 2520ms; }
+.fp-viewing-la_chine .fullpage .restaurant.la_chine_menu .frame:nth-child(2) {
+  -webkit-animation-delay: 2520ms;
+          animation-delay: 2520ms; }
+.fp-viewing-la_chine .fullpage .restaurant .frame:nth-child(3) {
+  -webkit-animation-delay: 5040ms;
+          animation-delay: 5040ms; }
+.fp-viewing-la_chine .fullpage .restaurant .frame.end .menu_pic {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2100ms;
+          transition-duration: 2100ms;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.22, 0.99);
+          transition-timing-function: cubic-bezier(0, 0, 0.22, 0.99);
+  -webkit-transition-delay: 2100ms;
+          transition-delay: 2100ms;
+  -webkit-transform: translate3d(0%, 0%, 0px);
+          transform: translate3d(0%, 0%, 0px); }
+.fullpage .restaurant .scene {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle; }
+  .fullpage .restaurant .scene .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+.fullpage .restaurant.fp-completely .bg {
+  -webkit-animation-name: restaurant_bg;
+          animation-name: restaurant_bg;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms; }
+.fullpage .restaurant.la_chine .scene .bg {
+  background-image: url("../../build/static/images/fans/la_chine_l.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms; }
+.fullpage .restaurant.golden_peacock .scene .bg {
+  background-image: url("../../build/static/images/fans/golden_peacock_l.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat; }
+.fullpage .restaurant.golden_peacock .scene img.chef {
+  left: auto;
+  right: 0px; }
+.fullpage .restaurant.golden_peacock .scene .restaurant_title {
+  margin-top: 0%; }
+.fullpage .restaurant.zi_yat_heen .scene .bg {
+  background-image: url("../../build/static/images/fans/zi_yat_heen_l.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat; }
+.fullpage .restaurant.zi_yat_heen .scene .restaurant_title {
+  margin-top: 0%; }
+.fullpage .restaurant .restaurant_title {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: .6rem 0;
+  color: #fff;
+  margin-top: 64%;
+  margin-top: 40vh; }
+  .fullpage .restaurant .restaurant_title h2 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 1;
+    margin: 0;
+    background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap; }
+  .fullpage .restaurant .restaurant_title img {
+    width: 50%;
+    margin: .6rem 0; }
+  .fullpage .restaurant .restaurant_title p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1; }
+.fullpage .restaurant .chef {
+  position: absolute;
+  width: 65%;
+  left: 0%;
+  bottom: 0%;
+  z-index: 3; }
+.fullpage .restaurant .menu {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 2rem;
+  bottom: 2rem;
+  background-color: #000;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #000;
+          box-shadow: 0px 0px 10px #000;
+  padding: 1rem;
+  overflow: hidden; }
+  .fullpage .restaurant .menu p {
+    margin: 0;
+    line-height: 1.2;
+    font-size: .9rem;
+    background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: pre-wrap; }
+  .fullpage .restaurant .menu small {
+    font-size: 70%;
+    font-weight: bold; }
+.fullpage .welcome .link {
+  width: 40%;
+  margin: 0 auto; }
+.fullpage .welcome .title {
+  margin: 0; }
+.fullpage .welcome .wellcome_img {
+  margin: 11% auto; }
+
+.bgsvg .divrestaurant {
+  width: 0%;
+  height: 0%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  -webkit-transition: opacity 500ms  linear;
+  transition: opacity 500ms  linear;
+  left: 0;
+  top: 0;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; }
+.bgsvg .la_chine {
+  background-image: url("../../build/static/images/fans/la_chine_d.jpg");
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms; }
+  .fp-viewing-la_chine .bgsvg .la_chine {
+    opacity: 1; }
+  .fp-viewing-la_chine_menu .bgsvg .la_chine {
+    opacity: 1; }
+.bgsvg .golden_peacock {
+  background-image: url("../../build/static/images/fans/golden_peacock_d.jpg"); }
+  .fp-viewing-golden_peacock .bgsvg .golden_peacock {
+    opacity: 1; }
+  .fp-viewing-golden_peacock_menu .bgsvg .golden_peacock {
+    opacity: 1; }
+.bgsvg .zi_yat_heendiv {
+  background-image: url("../../build/static/images/fans/zi_yat_heen_d.jpg"); }
+  .fp-viewing-zi_yat_heen .bgsvg .zi_yat_heendiv {
+    opacity: 1; }
+  .fp-viewing-zi_yat_heen_menu .bgsvg .zi_yat_heendiv {
+    opacity: 1; }
+
+.svg_restaurant {
+  fill: none;
+  stroke: url(#SVGID_restaurant_);
+  stroke-width: 1.0333;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+@-webkit-keyframes sands_svglogo_fans {
+  from {
+    stroke-dasharray: 310;
+    stroke-dashoffset: 310; }
+  to {
+    stroke-dasharray: 310;
+    stroke-dashoffset: 620; } }
+
+@keyframes sands_svglogo_fans {
+  from {
+    stroke-dasharray: 310;
+    stroke-dashoffset: 310; }
+  to {
+    stroke-dasharray: 310;
+    stroke-dashoffset: 620; } }
+@-webkit-keyframes restaurant_bg {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes restaurant_bg {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
