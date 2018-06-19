@@ -256,8 +256,13 @@ body{
         	width: 100%;
         	height: 100%;
 
-			display: table-cell;
-			vertical-align: middle;
+			/*display: table-cell;*/
+			/*vertical-align: middle;*/
+
+			position: relative;
+
+			transform: translate3d(0%,0%,0px);
+
 
         	.bg{
         		width: 100%;
@@ -268,6 +273,18 @@ body{
 				left: 0;
 				top: 0;
 				z-index: 1;
+
+				
+				animation-timing-function: linear;
+				animation-iteration-count: 1;
+				/*animation-play-state: paused;*/
+				animation-fill-mode: forwards;
+				animation-duration: $frame / 3;
+				animation-delay: 10ms;
+
+				transform: translate3d(0%,0%,0px);
+
+
 				
 
         	}
@@ -291,12 +308,8 @@ body{
         &.fp-completely{
         	.bg{
         		animation-name: restaurant_bg;
-				animation-timing-function: linear;
-				animation-iteration-count: 1;
-				animation-play-state: running;
-				animation-fill-mode: both;
-				animation-duration: $frame / 3;
-				animation-delay: 1ms;
+				/*animation-play-state: running;*/
+				
 
         	}
         }
@@ -361,17 +374,23 @@ body{
 		}
 
 		.restaurant_title{
-			position: relative;
+			position: absolute;
 
-			z-index: 2;
+			left: 0;
+
+			bottom: 50%;
+
+			z-index: 99;
 
 			background-color: rgba(0, 0, 0, 0.7);
     		padding: .6rem 0;
 
 			color: #fff;
 
-			margin-top: 64%;
-     		margin-top: 40vh; 
+			/*margin-top: 64%;*/
+     		/*margin-top: 40vh; */
+
+     		transform: translate3d(0%,0%,0px);
 
 			h2{
 				font-size: 1.4rem;
@@ -393,6 +412,8 @@ body{
 			img{
 				width: 50%;
 				margin: .6rem 0;
+
+				transform: translate3d(0%,0%,0px);
 			}
 
 			p{
@@ -412,7 +433,9 @@ body{
 			left: 0%;
 			bottom: 0%;
 
-			z-index: 3;
+			z-index: 100;
+
+			transform: translate3d(0%,0%,0px);
 		}
 
 		.menu{
@@ -603,7 +626,7 @@ body{
 				display: block;
 
 				width: 50%;
-				top: -30%;
+				top: -42%;
 				left: -34%;
 
 				.fp-viewing-golden_peacock_menu &{
@@ -669,7 +692,7 @@ body{
 				display: block;
 
 				width: 72%;
-				bottom: -44%;
+				bottom: -63%;
 				left: -46%;
 
 				.fp-viewing-zi_yat_heen_menu &{
