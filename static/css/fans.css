@@ -10,6 +10,9 @@ body {
 .scroll_icon {
   bottom: 12px; }
 
+.shell {
+  display: none; }
+
 .fullpage .cover .fans_title {
   width: 90%;
   margin-top: 51%;
@@ -40,8 +43,8 @@ body {
       line-height: 1; }
 .fullpage .artist .artist_pic {
   position: relative;
-  height: 270px;
-  height: 45vh; }
+  height: 320px;
+  height: 47vh; }
   .fullpage .artist .artist_pic .artist_name {
     position: absolute;
     top: 0%;
@@ -191,8 +194,8 @@ body {
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     /*animation-play-state: paused;*/
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
     -webkit-animation-duration: 1000ms;
             animation-duration: 1000ms;
     -webkit-animation-delay: 10ms;
@@ -267,7 +270,7 @@ body {
   .fullpage .restaurant .restaurant_title p {
     margin: 0;
     font-size: 0.8rem;
-    line-height: 1; }
+    line-height: 1.2; }
 .fullpage .restaurant .chef {
   position: absolute;
   width: 65%;

@@ -20,6 +20,10 @@ body{
 	bottom: 12px;
 }
 
+.shell{
+	display: none;
+}
+
 .fullpage{
 
 	////////////////////////////////
@@ -80,8 +84,8 @@ body{
 
 		.artist_pic{
 			position: relative;
-			height: 270px;
-			height: 45vh;
+			height: 320px;
+			height: 47vh;
 
 			.artist_name{
 				position: absolute;
@@ -278,7 +282,7 @@ body{
 				animation-timing-function: linear;
 				animation-iteration-count: 1;
 				/*animation-play-state: paused;*/
-				animation-fill-mode: forwards;
+				animation-fill-mode: both;
 				animation-duration: $frame / 3;
 				animation-delay: 10ms;
 
@@ -419,7 +423,7 @@ body{
 			p{
 				margin: 0;
 			    font-size: 0.8rem;
-			    line-height: 1;
+			    line-height: 1.2;
 
 			}
 
