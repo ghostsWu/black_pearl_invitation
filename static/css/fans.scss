@@ -306,6 +306,10 @@ body{
 
     			width: 100%;
     			height: 100%;
+
+    			position: relative;
+
+    			z-index: 99;
 			}
         }
 
@@ -454,6 +458,9 @@ body{
 
 			border-radius: 10px;
 
+
+
+
 			box-shadow: 0px 0px 10px #000;
 
 			border: 1px solid rgba(212, 166, 94, 0.4);
@@ -462,10 +469,15 @@ body{
 
 		    overflow: hidden;
 
+		    .br{
+		    	height: .5rem;
+
+		    }
+
 			p{
 				margin: 0;
 				line-height: 1.2;
-				font-size: .9rem;
+				font-size: .8rem;
 
 				background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
 				-webkit-background-clip: text;
@@ -477,12 +489,58 @@ body{
 
 			small{
 				font-size: 70%;
-				font-weight: bold;
+				font-weight: lighter;
+
+				color: #fff;
+
+
 			}
 
 			h3{
 				margin-top: 0;
 			}
+		}
+
+		.chef_title{
+			width: 100%;
+			position: absolute;
+
+			left: 0;
+			bottom: 0%;
+
+			z-index: 101;
+
+			text-align: left;
+			.fp-viewing-golden_peacock &{
+				text-align: right;
+
+
+			}
+
+			
+			padding-bottom: 10px;
+			padding-top: 30px;
+
+			transform: translate3d(0%, 0%, 0px);
+
+			/* Rectangle: */
+			background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.69) 100%);
+			
+			h3{
+				font-weight: lighter;
+				
+				margin: 0 10px;
+			}
+
+			p{
+				font-size: .8rem;
+				margin: 0 10px;
+				background-image: linear-gradient(-45deg, #cb9950 0%, #fce9b5 24%, #fbe3ac 56%, #d5a861 61%, #c69246 81%, #fce9b5 84%, #fce9b5 100%);
+			    -webkit-background-clip: text;
+			    background-clip: text;
+			    -webkit-text-fill-color: transparent;
+			}
+
 		}
 
 		
@@ -576,136 +634,133 @@ body{
 		}
 	}
 
-	.dish{
-		/*display: none;*/
-		position: absolute;
 
-		transform: translate(0%,0%);
+}
 
-		transition: transform ($frame / 3) cubic-bezier(0, 0, 0.33, 0.96) 300ms;
+.restaurant{
 
-		z-index: 3;
+	&.active{
+		.menu{
+			img.dish{
+				transform: translate3d(0%, 0%, 0px);
+			}
+		}
+	}
 
-			&.la_chine3{
-				display: block;
 
-				width: 50%;
-			    bottom: -33%;
-			    left: 26%;
+	.menu{
 
-				.fp-viewing-la_chine_menu &{
-					transform: translate(0%,-69%);
-				}
+		.dish{
+			position: absolute;
+			z-index: 9;
+
+			transition: transform 1200ms cubic-bezier(0, 0, 0.33, 0.96) 600ms;
+
+			&.la_chine1{
+				width: 230px;
+				width: 15rem;
+				left: -31%;
+				top: -119px;
+
+				transform: translate3d(-100%, -100%, 0px);
+
 
 			}
 
 			&.la_chine2{
-				display: block;
+				width: 124px;
+				width: 8rem;
+				right: -13%;
+				top: -38px;
 
-				width: 38%;
-				top: -21%;
-				left: 96%;
-				
-				.fp-viewing-la_chine_menu &{
-						transform: translate(-70%, 64%);
-				}
-
+				transform: translate3d(100%, -100%, 0px);
 			}
 
-			&.la_chine1{
-				display: block;
+			&.la_chine3{
+				width: 147px;
+				width: 9.8rem;
+				left: 50%;
+				bottom: -60px;
+				margin-left: 0 - 147px/2;
+				margin-left: 0 - 9.8rem/2;
 
-				width: 58%;
-				top: -33%;
-				left: -55%;
-
-				.fp-viewing-la_chine_menu &{
-						transform: translate(70%, 50%);
-				}
+				transform: translate3d(0%, 100%, 0px);
 			}
 
-			////////
+			/////////
 
-			&.golden_peacock3{
-				display: block;
+			&.golden_peacock1{
+				width: 246px;
+				width: 14rem;
+				left: -31%;
+				top: -119px;
 
-				width: 50%;
-				top: -42%;
-				left: -34%;
+				transform: translate3d(-100%, -100%, 0px);
 
-				.fp-viewing-golden_peacock_menu &{
-					transform: translate(43%, 52%);
-				}
 
 			}
 
 			&.golden_peacock2{
-				display: block;
+				width: 112px;
+				width: 8rem;
+				right: -13%;
+				top: -38px;
 
-				width: 50%;
-				top: 1%;
-				left: 100%;
-				
-				.fp-viewing-golden_peacock_menu &{
-						transform: translate(-80%, -28%);
-				}
-
+				transform: translate3d(100%, -100%, 0px);
 			}
 
-			&.golden_peacock1{
-				display: block;
+			&.golden_peacock3{
+				width: 300px;
+				width: 15.4rem;
+				right: 20%;
+				bottom: -40px;
 
-				width: 82%;
-				bottom: -17%;
-				left: -95%;
-
-				.fp-viewing-golden_peacock_menu &{
-						transform: translate(90%, -27%);
-				}
+				transform: translate3d(-100%, 10%, 0px);
 			}
 
-			////////
+			/////////
 
-			&.zi_yat_heen3{
-				display: block;
+			&.zi_yat_heen1{
+				width: 180px;
+				width: 12rem;
+				left: -13%;
+				top: -39px;
 
-				width: 60%;
-				top: -8%;
-				left: -60%;
+				transform: translate3d(-100%, -100%, 0px);
 
-				.fp-viewing-zi_yat_heen_menu &{
-					transform: translate(95%, -8%);
-				}
 
 			}
 
 			&.zi_yat_heen2{
-				display: block;
+				width: 210px;
+				width: 12rem;
+				right: -11%;
+				top: -15px;
 
-				width: 60%;
-				top: -6%;
-				right: -58%;
-				
-				.fp-viewing-zi_yat_heen_menu &{
-						transform: translate(-80%, 0%);
-				}
-
+				transform: translate3d(100%, -100%, 0px);
 			}
 
-			&.zi_yat_heen1{
-				display: block;
+			&.zi_yat_heen3{
+				width: 270px;
+				width: 15.4rem;
+				left: 50%;
+				margin-left: 0 - 270px / 2;
+				margin-left: 0 - 15.4rem / 2;
+				bottom: -130px;
 
-				width: 72%;
-				bottom: -63%;
-				left: -46%;
-
-				.fp-viewing-zi_yat_heen_menu &{
-						transform: translate(40%, -53%);
-				}
+				transform: translate3d(0%, 100%, 0px);
 			}
+
+
+		}
+
+
+		
+
+
 	}
-
 }
+
 
 .svg_restaurant {
     fill: none;
