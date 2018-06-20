@@ -340,6 +340,19 @@ body {
 .fullpage .welcome .link {
   width: 40%;
   margin: 0 auto; }
+  .fullpage .welcome .link:nth-of-type(3) {
+    margin-top: -9.1%;
+    -webkit-animation-name: welcome_link;
+            animation-name: welcome_link;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    /*animation-delay: 700ms;*/
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
 .fullpage .welcome .title {
   margin: 0; }
 .fullpage .welcome .wellcome_img {
@@ -739,4 +752,22 @@ body {
   from {
     opacity: 1; }
   to {
+    opacity: 0; } }
+@-webkit-keyframes welcome_link {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.3, 1.4);
+            transform: scale(1.3, 1.4);
+    opacity: 0; } }
+@keyframes welcome_link {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1.3, 1.4);
+            transform: scale(1.3, 1.4);
     opacity: 0; } }
