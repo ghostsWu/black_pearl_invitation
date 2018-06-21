@@ -306,7 +306,7 @@ body {
     -webkit-text-fill-color: transparent;
     white-space: pre-wrap; }
   .fullpage .restaurant .menu small {
-    font-size: 70%;
+    font-size: 0.6rem;
     font-weight: lighter;
     color: #fff; }
   .fullpage .restaurant .menu h3 {
@@ -410,70 +410,77 @@ body {
   transition: transform 1200ms cubic-bezier(0, 0, 0.33, 0.96) 600ms;
   transition: transform 1200ms cubic-bezier(0, 0, 0.33, 0.96) 600ms, -webkit-transform 1200ms cubic-bezier(0, 0, 0.33, 0.96) 600ms; }
   .restaurant .menu .dish.la_chine1 {
-    width: 230px;
-    width: 15rem;
-    left: -31%;
-    top: -119px;
+    width: 195px;
+    width: 13rem;
+    left: -24%;
+    top: -104px;
+    top: -6.5rem;
     -webkit-transform: translate3d(-100%, -100%, 0px);
             transform: translate3d(-100%, -100%, 0px); }
   .restaurant .menu .dish.la_chine2 {
-    width: 124px;
-    width: 8rem;
+    width: 105px;
+    width: 7rem;
     right: -13%;
-    top: -38px;
+    top: -43px;
+    top: -3rem;
     -webkit-transform: translate3d(100%, -100%, 0px);
             transform: translate3d(100%, -100%, 0px); }
   .restaurant .menu .dish.la_chine3 {
-    width: 147px;
-    width: 9.8rem;
+    width: 117px;
+    width: 7.8rem;
     left: 50%;
     bottom: -60px;
-    margin-left: -73.5px;
-    margin-left: -4.9rem;
+    margin-left: -58.5px;
+    margin-left: -3.9rem;
     -webkit-transform: translate3d(0%, 100%, 0px);
             transform: translate3d(0%, 100%, 0px); }
   .restaurant .menu .dish.golden_peacock1 {
-    width: 246px;
-    width: 14rem;
-    left: -31%;
-    top: -119px;
+    width: 150px;
+    width: 10rem;
+    left: -17%;
+    top: -84px;
+    top: -5.8rem;
     -webkit-transform: translate3d(-100%, -100%, 0px);
             transform: translate3d(-100%, -100%, 0px); }
   .restaurant .menu .dish.golden_peacock2 {
-    width: 112px;
-    width: 8rem;
+    width: 105px;
+    width: 7rem;
     right: -13%;
     top: -38px;
     -webkit-transform: translate3d(100%, -100%, 0px);
             transform: translate3d(100%, -100%, 0px); }
   .restaurant .menu .dish.golden_peacock3 {
-    width: 300px;
-    width: 15.4rem;
-    right: 20%;
+    width: 230px;
+    width: 14rem;
+    right: 28%;
     bottom: -40px;
+    bottom: -3rem;
     -webkit-transform: translate3d(-100%, 10%, 0px);
             transform: translate3d(-100%, 10%, 0px); }
   .restaurant .menu .dish.zi_yat_heen1 {
-    width: 180px;
-    width: 12rem;
-    left: -13%;
-    top: -39px;
+    width: 165px;
+    width: 11rem;
+    left: -6%;
+    top: -41px;
+    top: -2.8rem;
     -webkit-transform: translate3d(-100%, -100%, 0px);
             transform: translate3d(-100%, -100%, 0px); }
   .restaurant .menu .dish.zi_yat_heen2 {
-    width: 210px;
-    width: 12rem;
-    right: -11%;
-    top: -15px;
+    width: 165px;
+    width: 11rem;
+    right: -7%;
+    top: -24px;
+    top: -1.5rem;
     -webkit-transform: translate3d(100%, -100%, 0px);
             transform: translate3d(100%, -100%, 0px); }
   .restaurant .menu .dish.zi_yat_heen3 {
-    width: 270px;
-    width: 15.4rem;
+    width: 186px;
+    width: 12rem;
     left: 50%;
-    margin-left: -135px;
-    margin-left: -7.7rem;
-    bottom: -130px;
+    margin-left: -93px;
+    margin-left: -6rem;
+    bottom: -92px;
+    bottom: -6rem;
     -webkit-transform: translate3d(0%, 100%, 0px);
             transform: translate3d(0%, 100%, 0px); }
 
@@ -534,108 +541,126 @@ body {
   .fp-completely .ladder_animation {
     -webkit-animation-name: ladder_animation;
             animation-name: ladder_animation; }
-  .ladder_animation:nth-of-type(1) {
+  .ladder_animation:nth-child(1) {
     -webkit-animation-delay: 0ms;
             animation-delay: 0ms; }
-  .ladder_animation:nth-of-type(2) {
+  .ladder_animation:nth-child(2) {
     -webkit-animation-delay: 100ms;
             animation-delay: 100ms; }
-  .ladder_animation:nth-of-type(3) {
+  .ladder_animation:nth-child(3) {
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms; }
-  .ladder_animation:nth-of-type(4) {
+  .ladder_animation:nth-child(4) {
     -webkit-animation-delay: 300ms;
             animation-delay: 300ms; }
-  .ladder_animation:nth-of-type(5) {
+  .ladder_animation:nth-child(5) {
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms; }
-  .ladder_animation:nth-of-type(6) {
+  .ladder_animation:nth-child(6) {
     -webkit-animation-delay: 500ms;
             animation-delay: 500ms; }
-  .ladder_animation:nth-of-type(7) {
+  .ladder_animation:nth-child(7) {
     -webkit-animation-delay: 600ms;
             animation-delay: 600ms; }
-  .ladder_animation:nth-of-type(8) {
+  .ladder_animation:nth-child(8) {
     -webkit-animation-delay: 700ms;
             animation-delay: 700ms; }
-  .ladder_animation:nth-of-type(9) {
+  .ladder_animation:nth-child(9) {
     -webkit-animation-delay: 800ms;
             animation-delay: 800ms; }
-  .ladder_animation:nth-of-type(10) {
+  .ladder_animation:nth-child(10) {
     -webkit-animation-delay: 900ms;
             animation-delay: 900ms; }
-  .ladder_animation:nth-of-type(11) {
+  .ladder_animation:nth-child(11) {
     -webkit-animation-delay: 1000ms;
             animation-delay: 1000ms; }
-  .ladder_animation:nth-of-type(12) {
+  .ladder_animation:nth-child(12) {
     -webkit-animation-delay: 1100ms;
             animation-delay: 1100ms; }
-  .ladder_animation:nth-of-type(13) {
+  .ladder_animation:nth-child(13) {
     -webkit-animation-delay: 1200ms;
             animation-delay: 1200ms; }
-  .ladder_animation:nth-of-type(14) {
+  .ladder_animation:nth-child(14) {
     -webkit-animation-delay: 1300ms;
             animation-delay: 1300ms; }
-  .ladder_animation:nth-of-type(15) {
+  .ladder_animation:nth-child(15) {
     -webkit-animation-delay: 1400ms;
             animation-delay: 1400ms; }
-  .ladder_animation:nth-of-type(16) {
+  .ladder_animation:nth-child(16) {
     -webkit-animation-delay: 1500ms;
             animation-delay: 1500ms; }
-  .ladder_animation:nth-of-type(17) {
+  .ladder_animation:nth-child(17) {
     -webkit-animation-delay: 1600ms;
             animation-delay: 1600ms; }
-  .ladder_animation.delay:nth-of-type(1) {
+  .ladder_animation:nth-child(18) {
+    -webkit-animation-delay: 1700ms;
+            animation-delay: 1700ms; }
+  .ladder_animation:nth-child(19) {
+    -webkit-animation-delay: 1800ms;
+            animation-delay: 1800ms; }
+  .ladder_animation:nth-child(20) {
+    -webkit-animation-delay: 1900ms;
+            animation-delay: 1900ms; }
+  .ladder_animation.delay:nth-child(1) {
     -webkit-animation-delay: 3000ms;
             animation-delay: 3000ms; }
-  .ladder_animation.delay:nth-of-type(2) {
+  .ladder_animation.delay:nth-child(2) {
     -webkit-animation-delay: 3100ms;
             animation-delay: 3100ms; }
-  .ladder_animation.delay:nth-of-type(3) {
+  .ladder_animation.delay:nth-child(3) {
     -webkit-animation-delay: 3200ms;
             animation-delay: 3200ms; }
-  .ladder_animation.delay:nth-of-type(4) {
+  .ladder_animation.delay:nth-child(4) {
     -webkit-animation-delay: 3300ms;
             animation-delay: 3300ms; }
-  .ladder_animation.delay:nth-of-type(5) {
+  .ladder_animation.delay:nth-child(5) {
     -webkit-animation-delay: 3400ms;
             animation-delay: 3400ms; }
-  .ladder_animation.delay:nth-of-type(6) {
+  .ladder_animation.delay:nth-child(6) {
     -webkit-animation-delay: 3500ms;
             animation-delay: 3500ms; }
-  .ladder_animation.delay:nth-of-type(7) {
+  .ladder_animation.delay:nth-child(7) {
     -webkit-animation-delay: 3600ms;
             animation-delay: 3600ms; }
-  .ladder_animation.delay:nth-of-type(8) {
+  .ladder_animation.delay:nth-child(8) {
     -webkit-animation-delay: 3700ms;
             animation-delay: 3700ms; }
-  .ladder_animation.delay:nth-of-type(9) {
+  .ladder_animation.delay:nth-child(9) {
     -webkit-animation-delay: 3800ms;
             animation-delay: 3800ms; }
-  .ladder_animation.delay:nth-of-type(10) {
+  .ladder_animation.delay:nth-child(10) {
     -webkit-animation-delay: 3900ms;
             animation-delay: 3900ms; }
-  .ladder_animation.delay:nth-of-type(11) {
+  .ladder_animation.delay:nth-child(11) {
     -webkit-animation-delay: 4000ms;
             animation-delay: 4000ms; }
-  .ladder_animation.delay:nth-of-type(12) {
+  .ladder_animation.delay:nth-child(12) {
     -webkit-animation-delay: 4100ms;
             animation-delay: 4100ms; }
-  .ladder_animation.delay:nth-of-type(13) {
+  .ladder_animation.delay:nth-child(13) {
     -webkit-animation-delay: 4200ms;
             animation-delay: 4200ms; }
-  .ladder_animation.delay:nth-of-type(14) {
+  .ladder_animation.delay:nth-child(14) {
     -webkit-animation-delay: 4300ms;
             animation-delay: 4300ms; }
-  .ladder_animation.delay:nth-of-type(15) {
+  .ladder_animation.delay:nth-child(15) {
     -webkit-animation-delay: 4400ms;
             animation-delay: 4400ms; }
-  .ladder_animation.delay:nth-of-type(16) {
+  .ladder_animation.delay:nth-child(16) {
     -webkit-animation-delay: 4500ms;
             animation-delay: 4500ms; }
-  .ladder_animation.delay:nth-of-type(17) {
+  .ladder_animation.delay:nth-child(17) {
     -webkit-animation-delay: 4600ms;
             animation-delay: 4600ms; }
+  .ladder_animation.delay:nth-child(18) {
+    -webkit-animation-delay: 4700ms;
+            animation-delay: 4700ms; }
+  .ladder_animation.delay:nth-child(19) {
+    -webkit-animation-delay: 4800ms;
+            animation-delay: 4800ms; }
+  .ladder_animation.delay:nth-child(20) {
+    -webkit-animation-delay: 4900ms;
+            animation-delay: 4900ms; }
 
 .fp-viewing-artist .bgsvg .bgsvg1 {
   -webkit-transform: translate3d(-40%, -60%, 0px);
