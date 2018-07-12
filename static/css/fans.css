@@ -703,6 +703,11 @@ body {
 .fp-viewing-zi_yat_heen_menu .bgsvg .bgsvg2 {
   opacity: 0; }
 
+.fullpage .contact .title {
+  width: 40%; }
+.fullpage .contact .wellcome_img {
+  width: 40%; }
+
 @-webkit-keyframes artist_animation {
   from {
     -webkit-transform: scale(1.3) translatey(20%);

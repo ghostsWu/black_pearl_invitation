@@ -936,6 +936,24 @@ body{
 }
 
 
+
+///////////////////180625///////////////
+
+.fullpage{
+	.contact{
+		.title{
+			width: 40%;
+		}
+
+		.wellcome_img{
+			width: 40%;
+		}
+	}
+}
+
+
+
+
 @keyframes artist_animation {
 	from { transform: scale(1.3) translatey(20%);opacity: 0 }
 	to { transform: scale(1) translatey(0%); opacity: 1}
